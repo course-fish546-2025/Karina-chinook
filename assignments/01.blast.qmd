@@ -3,24 +3,18 @@ title: "01.blast"
 format: html
 editor: visual
 ---
+```{bash}
 
-## Quarto
-
-Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
-
-## Running Code
-
-When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
-
-```{r}
-1 + 1
 ```
 
-You can add options to executable code like this
+I am going to download blast and use it to compare it to unkown sequences. 
+```{bash}
+cd /home/jovyan/applications
+curl -O https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/ncbi-blast-2.16.0+-x64-linux.tar.gz
+tar -xf ncbi-blast-2.16.0+-x64-linux.tar.gz
 
-```{r}
-#| echo: false
-2 * 2
+```
+```{bash}
+/home/jovyan/applications/ncbi-blast-2.16.0+/bin/blastx -h
 ```
 
-The `echo: false` option disables the printing of code (only output is displayed).
