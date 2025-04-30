@@ -1,0 +1,7 @@
+---
+title: "04-sr-bam"
+format: html
+editor: visual
+---
+
+## Lets look at some bams on klone
